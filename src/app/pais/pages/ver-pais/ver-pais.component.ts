@@ -15,6 +15,8 @@ export class VerPaisComponent implements OnInit {
 
   pais: Country[] = [];
 
+  
+
   constructor( 
     private activatedRoute: ActivatedRoute,
     private PaisService:PaisService
@@ -28,6 +30,8 @@ export class VerPaisComponent implements OnInit {
         tap( console.log )
       )
       .subscribe( pais =>  this.pais = pais );
+
+      
     // this.activatedRoute.params
     //   .subscribe( ({ id}) => {
     //     console.log( id );
@@ -39,5 +43,7 @@ export class VerPaisComponent implements OnInit {
 
     //   });
   }
+
+
 
 }

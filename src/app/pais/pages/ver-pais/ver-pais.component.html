@@ -1,6 +1,6 @@
 <div *ngFor="let pais of pais" >
 
-    <div *ngIf="!pais; else divPais"
+    <div *ngIf="pais == null  ; else divPais"
          class="alert alert-info">
          Espere por favor...
      </div>
